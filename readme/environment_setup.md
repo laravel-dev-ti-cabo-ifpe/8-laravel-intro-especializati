@@ -8,5 +8,11 @@
 
 ```127.0.0.1 <domain_name>```
 
+## Create laravel project
 
+``` composer create-project --prefer-dist laravel/laravel <project_name> ```
+
+## Set time zone in config/app.php file
+
+``` timezone = "America/Sao_Paulo ``` 
 
