@@ -7,6 +7,7 @@
   - [git_command](https://github.com/laravel-dev-ti-cabo-ifpe/8-laravel-intro-especializati/blob/master/readme/git_command.md)
   - [database_connection](https://github.com/laravel-dev-ti-cabo-ifpe/8-laravel-intro-especializati/blob/master/readme/database_connection.md)
   - [insert_registers](https://github.com/laravel-dev-ti-cabo-ifpe/8-laravel-intro-especializati/blob/master/readme/insert_registers.md)
+  - [pagination](https://github.com/laravel-dev-ti-cabo-ifpe/8-laravel-intro-especializati/blob/master/readme/pagination.md)
   
   
   
