@@ -6,7 +6,7 @@
 ## Inicializa o repositorio
 ``` git init ```
 
-##Denscosiderar todos  no arquivo arquivo .gitignore 
+## Denscosiderar todos  no arquivo arquivo .gitignore 
 ``` *.log ```
 
 ## Adiciona todos os arquivo no stage
@@ -19,7 +19,7 @@
 git branch -M <branch_name> (e.g. main)
 
 ## Adiciona o repositorio remoto
-``` git remote <remote_url>```
+``` git remote add origin <remote_url>```
 
 ## Empurra para master
 ``` git push origin <main_branch> ```
