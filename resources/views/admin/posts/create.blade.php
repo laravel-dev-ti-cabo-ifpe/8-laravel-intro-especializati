@@ -23,11 +23,27 @@
     <body >
     <h1> Cadastra Novo Post</h1>
 
+    @if ($errors->any())
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-md text-yellow-700 bg-yellow-100 border border-yellow-300">{{ $error }}</li>
+        @endforeach
+    </ul>
+    @endif
     <form action="{{ route('posts.store') }}" method="post" >
         @csrf
-        <input type="text" name="title" id="title" placeholder="Titulo">
-        <textarea name="content" id="content" cols="100" rows="4" placeholder="Conteudo"> </textarea>
+        <span> Title </span>
+        <input type="text" name="title" id="title" placeholder="Titulo " value="{{ old('title') }}" > </input>
+        
+        <span> Content </span>
+        <textarea name="content" id="content" cols="100" rows="4" placeholder="Conteudo " value="{{ old('content') }}" > </textarea> 
+
+        <span> Image </span>
+        <input type="file" name="image" id="image" >
+        
         <button type="submit"> Enviar </button>
+
+
     </form>
 
        
