@@ -30,17 +30,20 @@
         @endforeach
     </ul>
     @endif
-    <form action="{{ route('posts.store') }}" method="post" >
+    <form action="{{ route('posts.store') }}" method="post"  enctype="multipart/form-data" >
         @csrf
+
+
         <span> Title </span>
-        <input type="text" name="title" id="title" placeholder="Titulo " value="{{ old('title') }}" > </input>
+        <input type="text" name="title" id="title" placeholder="Titulo..." value="{{ old('title') }}" > </input>
         
         <span> Content </span>
-        <textarea name="content" id="content" cols="100" rows="4" placeholder="Conteudo " value="{{ old('content') }}" > </textarea> 
+        <textarea name="content" id="content" cols="10" rows="4" placeholder="Conteudo..." value="{{ old('content') }}" > </textarea> 
 
+       
         <span> Image </span>
         <input type="file" name="image" id="image" >
-        
+
         <button type="submit"> Enviar </button>
 
 

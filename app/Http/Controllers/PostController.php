@@ -6,6 +6,8 @@ use App\Http\Requests\StoreUpdatePost;
 use Illuminate\Http\Request;
 
 use App\Models\Post;
+use Illuminate\Support\Str;
+
 
 
 class PostController extends Controller
@@ -21,7 +23,17 @@ class PostController extends Controller
 
     //public function store(Request $request){
     public function store(StoreUpdatePost $request){
-        $post = Post::create($request->all());
+        $data = $request->all();
+        if($request->image->isValid()){
+            //Pegando o nome do arquivo
+            $nameFile = Str::of($request->title)->slug('-') . '.' . $request->image->getClientOriginalExtension();            
+        
+            $image = $request->image->storeAs('posts', $nameFile);
+            $data['image'] = $image;
+
+        }
+        //$post = Post::create($request->all());
+        Post::create($data);
         return redirect()->route('posts.index');
     }
 }

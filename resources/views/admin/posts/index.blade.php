@@ -24,9 +24,11 @@
     <a href="{{ route('posts.create') }}"> Criar Novo </a>
     <hr>
     <h1>Posts</h1>
-
+        
     @foreach ($posts as $post)
-            <p> {{$post->title}} -  {{$post->content}}</p>
+    
+    <img src="{{ url("storage/{$post->image}") }}" alt="{{ $post->title }}" class="w-16" /> 
+    <p> {{$post->title}} -  {{$post->content}}</p>
            
     @endforeach
 
