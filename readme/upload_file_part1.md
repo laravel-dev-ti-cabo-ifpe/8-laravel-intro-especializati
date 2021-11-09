@@ -34,8 +34,6 @@ use Illuminate\Support\Str;
 $nameFile =Str::of($request-title)->slug('-'). '.' . $request->image->getClienOriginalNameExtension();
 ``` 
 
-## Add constant .env file 
-FILESYSTEM_DRIVER = public
 
 ## References
-https://academy.especializati.com.br/aula/configuracoes-laravel-upload-arquivos
+https://academy.especializati.com.br/aula/upload-arquivos-laravel-pt-1

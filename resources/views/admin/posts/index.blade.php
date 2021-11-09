@@ -27,7 +27,7 @@
         
     @foreach ($posts as $post)
     
-    <img src="{{ url("storage/{$post->image}") }}" alt="{{ $post->title }}" class="w-16" /> 
+    <img src="{{ url("storage/{$post->image}") }}" alt="{{ $post->title }}" style="max-width: 50px;" /> 
     <p> {{$post->title}} -  {{$post->content}}</p>
            
     @endforeach
