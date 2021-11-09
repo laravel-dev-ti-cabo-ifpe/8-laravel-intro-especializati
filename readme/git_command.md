@@ -1,6 +1,7 @@
 #Git
 ## Configura opcoes do usuario
 ``` git config --global user.name <user_name> ```
+
 ``` git config --global user.email <user_email> ```
 
 ## Inicializa o repositorio
@@ -16,13 +17,13 @@
 ``` git commit -m <msg>```
 
 ## Criar uma branch
-git branch -M <branch_name> (e.g. main)
+``` git branch -M <branch_name> (e.g. main) ```
 
 ## Adiciona o repositorio remoto
 ``` git remote add origin <remote_url>```
 
 ## Empurra para master
-``` git push origin <main_branch> ```
+``` git push -u origin <main_branch> ```
 
 
 
